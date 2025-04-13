@@ -1,0 +1,5 @@
+class AddRoasterToCoffee < ActiveRecord::Migration[8.0]
+  def change
+    add_reference :coffees, :roaster, foreign_key: true
+  end
+end
